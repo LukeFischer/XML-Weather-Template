@@ -14,6 +14,18 @@ namespace XMLWeather
         public ForecastScreen()
         {
             InitializeComponent();
+            displayForecast();
+        }
+
+        public void displayForecast()
+        {
+            date1.Text = Form1.days[1].date;
+            minimum1.Text = Form1.days[1].tempLow;
+            maximum1.Text = Form1.days[1].tempHigh;
+
+            date2.Text = Form1.days[1].date;
+            minimum2.Text = Form1.days[1].tempLow;
+            maximum2.Text = Form1.days[1].tempHigh;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -24,5 +36,7 @@ namespace XMLWeather
             CurrentScreen cs = new CurrentScreen();
             f.Controls.Add(cs);
         }
+
+        
     }
 }
