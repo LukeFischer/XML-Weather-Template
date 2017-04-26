@@ -16,14 +16,14 @@ namespace XMLWeather
         // TODO: create list to hold day objects
         public static List<Day> days = new List<Day>();
         Day d = new Day();
-        int temp;
-
+        string temp;
+        public static int temperature;
         public Form1()
         {
             InitializeComponent();
             GetData();
             ExtractCurrent();
-            //ExtractForecast();
+            ExtractForecast();
 
             // open weather screen for todays weather
             CurrentScreen cs = new CurrentScreen();
@@ -65,12 +65,20 @@ namespace XMLWeather
 
                 if (child.Name == "temperature")
                 {
+                    
                     d.tempHigh = child.Attributes["max"].Value;
                     d.tempLow = child.Attributes["min"].Value;
                     d.currentTemp = child.Attributes["value"].Value;
-                    
+                    //d.currentTemp = Convert.ToString(temp);
+                    temp = (d.currentTemp);
+                    temperature = Convert.ToInt16(temp);
+                    CurrentScreen.ct = temperature;
                 }
-
+                if (child.Name == "humidity")
+                {
+                    d.humidity = child.Attributes["value"].Value;
+                    d.unit = child.Attributes["unit"].Value;
+                }
                 if (child.Name == "weather")
                 {
                     d.weather = child.Attributes["value"].Value;

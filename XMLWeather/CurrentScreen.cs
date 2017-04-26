@@ -11,6 +11,8 @@ namespace XMLWeather
 {
     public partial class CurrentScreen : UserControl
     {
+        public static int ct;
+        
         public CurrentScreen()
         {
             InitializeComponent();
@@ -19,13 +21,15 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
-            cityOutput.Text = Form1.days[0].location;
-            currentOutput.Text = Form1.days[0].currentTemp+"°";
-            highOutput.Text = Form1.days[0].tempLow+ "°";
-            lowOutput.Text = Form1.days[0].tempHigh + "°";
-            countryLabel.Text = "," + Form1.days[0].country;
+            cityOutput.Text = Form1.days[0].location + "," + Form1.days[0].country;
+            currentOutput.Text = Form1.days[0].currentTemp + "°";
+            lowOutput.Text = Form1.days[0].tempLow + "°";
+            highOutput.Text = Form1.days[0].tempHigh + "°";
             weatherOuput.Text = Form1.days[0].weather;
-            updateOutput.Text = "Last time updated" + " " +Form1.days[0].update;
+            updateOutput.Text = "Last time updated" + " " + Form1.days[0].update;
+            humidityOutput.Text = "Humidity" + " " + Form1.days[0].humidity + Form1.days[0].unit;
+            label1.Text = Convert.ToString(ct);
+
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)
@@ -36,7 +40,7 @@ namespace XMLWeather
             ForecastScreen fs = new ForecastScreen();
             f.Controls.Add(fs);
         }
-
-        
     }
 }
+        
+        
