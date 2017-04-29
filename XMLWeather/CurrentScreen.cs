@@ -29,7 +29,7 @@ namespace XMLWeather
             weatherOuput.Text = Form1.days[0].weather;
             updateOutput.Text = "Last time updated" + " " + Form1.days[0].update;
             humidityOutput.Text = "Humidity" + " " + Form1.days[0].humidity + Form1.days[0].unit;
-            
+            windOutput.Text = Form1.days[0].wind + Form1.days[0].direction + Form1.days[0].speed;
             if (ct >= 10)
             {
                 BackgroundImage = Properties.Resources.hot;

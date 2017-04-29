@@ -41,6 +41,7 @@
             this.highOutput = new System.Windows.Forms.Label();
             this.humidityOutput = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.windOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -179,11 +180,22 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 47;
             // 
+            // windOutput
+            // 
+            this.windOutput.AutoSize = true;
+            this.windOutput.BackColor = System.Drawing.Color.Transparent;
+            this.windOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windOutput.Location = new System.Drawing.Point(21, 294);
+            this.windOutput.Name = "windOutput";
+            this.windOutput.Size = new System.Drawing.Size(0, 25);
+            this.windOutput.TabIndex = 48;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.windOutput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.humidityOutput);
             this.Controls.Add(this.updateOutput);
@@ -218,5 +230,6 @@
         private System.Windows.Forms.Label updateOutput;
         private System.Windows.Forms.Label humidityOutput;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label windOutput;
     }
 }

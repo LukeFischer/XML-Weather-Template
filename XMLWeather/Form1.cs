@@ -62,6 +62,7 @@ namespace XMLWeather
                             d.country = grandChild.InnerText;
                     }
                 }
+                
 
                 if (child.Name == "temperature")
                 {
@@ -78,7 +79,16 @@ namespace XMLWeather
                     d.humidity = child.Attributes["value"].Value;
                     d.unit = child.Attributes["unit"].Value;
                 }
-                if (child.Name == "weather")
+                if (child.Name == "wind")
+                {
+                    foreach (XmlNode grandChild in child.ChildNodes)
+                    {
+                        if (grandChild.Name == "speed")
+                            d.wind = grandChild.Attributes["name"].Value;
+                    }
+                }
+            
+                    if (child.Name == "weather")
                 {
                     d.weather = child.Attributes["value"].Value;
                 }
