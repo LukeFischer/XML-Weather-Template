@@ -49,7 +49,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.Black;
-            this.cityOutput.Location = new System.Drawing.Point(23, 90);
+            this.cityOutput.Location = new System.Drawing.Point(18, 91);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(0, 33);
             this.cityOutput.TabIndex = 22;
@@ -59,7 +59,7 @@
             this.lowOutput.BackColor = System.Drawing.Color.Transparent;
             this.lowOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowOutput.ForeColor = System.Drawing.Color.Blue;
-            this.lowOutput.Location = new System.Drawing.Point(370, 341);
+            this.lowOutput.Location = new System.Drawing.Point(357, 338);
             this.lowOutput.Name = "lowOutput";
             this.lowOutput.Size = new System.Drawing.Size(113, 33);
             this.lowOutput.TabIndex = 32;
@@ -70,7 +70,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(278, 341);
+            this.label2.Location = new System.Drawing.Point(280, 338);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 33);
             this.label2.TabIndex = 31;
@@ -82,7 +82,7 @@
             this.maxLabel.BackColor = System.Drawing.Color.Transparent;
             this.maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLabel.ForeColor = System.Drawing.Color.Red;
-            this.maxLabel.Location = new System.Drawing.Point(18, 341);
+            this.maxLabel.Location = new System.Drawing.Point(18, 338);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(79, 33);
             this.maxLabel.TabIndex = 29;
@@ -91,11 +91,11 @@
             // currentOutput
             // 
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
-            this.currentOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentOutput.ForeColor = System.Drawing.Color.Black;
-            this.currentOutput.Location = new System.Drawing.Point(251, 42);
+            this.currentOutput.Location = new System.Drawing.Point(223, 110);
             this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(246, 169);
+            this.currentOutput.Size = new System.Drawing.Size(274, 209);
             this.currentOutput.TabIndex = 28;
             // 
             // todayLabel
@@ -137,7 +137,7 @@
             // 
             this.weatherOuput.BackColor = System.Drawing.Color.Transparent;
             this.weatherOuput.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weatherOuput.Location = new System.Drawing.Point(21, 172);
+            this.weatherOuput.Location = new System.Drawing.Point(21, 163);
             this.weatherOuput.Name = "weatherOuput";
             this.weatherOuput.Size = new System.Drawing.Size(215, 36);
             this.weatherOuput.TabIndex = 44;
@@ -155,7 +155,7 @@
             this.highOutput.BackColor = System.Drawing.Color.Transparent;
             this.highOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highOutput.ForeColor = System.Drawing.Color.Red;
-            this.highOutput.Location = new System.Drawing.Point(109, 341);
+            this.highOutput.Location = new System.Drawing.Point(103, 338);
             this.highOutput.Name = "highOutput";
             this.highOutput.Size = new System.Drawing.Size(147, 45);
             this.highOutput.TabIndex = 30;
@@ -165,7 +165,7 @@
             this.humidityOutput.AutoSize = true;
             this.humidityOutput.BackColor = System.Drawing.Color.Transparent;
             this.humidityOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.humidityOutput.Location = new System.Drawing.Point(24, 263);
+            this.humidityOutput.Location = new System.Drawing.Point(19, 235);
             this.humidityOutput.Name = "humidityOutput";
             this.humidityOutput.Size = new System.Drawing.Size(0, 25);
             this.humidityOutput.TabIndex = 46;
@@ -173,18 +173,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(337, 275);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 47;
-            this.label1.Text = "label1";
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::XMLWeather.Properties.Resources._1;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.humidityOutput);
             this.Controls.Add(this.updateOutput);

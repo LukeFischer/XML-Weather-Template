@@ -69,7 +69,6 @@ namespace XMLWeather
                     d.tempHigh = child.Attributes["max"].Value;
                     d.tempLow = child.Attributes["min"].Value;
                     d.currentTemp = child.Attributes["value"].Value;
-                    //d.currentTemp = Convert.ToString(temp);
                     temp = (d.currentTemp);
                     temperature = Convert.ToInt16(temp);
                     CurrentScreen.ct = temperature;

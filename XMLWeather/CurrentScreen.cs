@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace XMLWeather
 {
@@ -28,8 +29,24 @@ namespace XMLWeather
             weatherOuput.Text = Form1.days[0].weather;
             updateOutput.Text = "Last time updated" + " " + Form1.days[0].update;
             humidityOutput.Text = "Humidity" + " " + Form1.days[0].humidity + Form1.days[0].unit;
-            label1.Text = Convert.ToString(ct);
+            
+            if (ct >= 10)
+            {
+                BackgroundImage = Properties.Resources.hot;
+            }
+            if (ct >= 0)
+            {
+                BackgroundImage = Properties.Resources.automn;
 
+                if (ct >= 10)
+                {
+                    BackgroundImage = Properties.Resources.hot;
+                }
+            }
+            if (ct <0)
+            {
+                BackgroundImage = Properties.Resources.cold;
+            }
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)
@@ -40,6 +57,8 @@ namespace XMLWeather
             ForecastScreen fs = new ForecastScreen();
             f.Controls.Add(fs);
         }
+
+        
     }
 }
         
